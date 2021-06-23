@@ -32,21 +32,87 @@ dis.createMsg(message.channel.id, "hi") //discord.js + discmds.js
 #### Event 2 [userBan] 
 This event happens when someone in the server gets banned!
 ```js
-dis.on('msgCreate', async message => {
-message.channel.send("hi") //discord.js sending
-dis.createMsg(message.channel.id, "hi") //discord.js + discmds.js
-//If you also want to send a attachment with message do dis.createMsg(channeid, content, filelink)
+dis.on('msgCreate', async (guild,user) => {
+console.log(`${user.user.tag} got banned in ${guild.name}!`)
 })
 ```
 
+#### Event 3 [userUnBan] 
+This event happens when someone in the server gets unbanned!
+```js
+dis.on('userUnBan', async  => {
+console.log(`${user.id} got banned in ${guild.name}!`)
+})
+```
 
+#### Event 4 [emojiAdd] 
+This event happens when new emoji has been added in the server!
+```js
+dis.on('emojiAdd', async emoji => {
+console.log(emoji.id)
+})
+```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+#### Event 5 [emojiRemove] 
+This event happens when emoji has been deleted in the server!
+```js
+dis.on('emojiRemove', async emoji => {
+console.log(emoji.id)
+})
+```
 
-### Jekyll Themes
+#### Event 6 [emojiUpdate] 
+This event happens when emoji has been updated in the server!
+```js
+dis.on('emojiUpdate', async  => {
+console.log(emoji.id)
+})
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/discmds/discmds/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+#### Event 7 [guildMemberJoin] 
+This event happens when new members joins the server!
+```js
+dis.on('guildMemberJoin', async member => {
+console.log(member.user.tag)
+})
+```
 
-### Support or Contact
+#### Event 8 [guildMemberLeave] 
+This event happens when members leave the server!
+```js
+dis.on('guildMemberLeave', async member => {
+console.log(member.user.tag)
+})
+```
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+#### Event 9 [guildJoin] 
+This event happens when the bot join servers!
+```js
+dis.on('guildJoin', async guild => {
+console.log(guild.id)
+})
+```
+
+#### Event 10 [guildLeave] 
+This event happens when the bot leave servers!
+```js
+dis.on('guildLeave', async guild => {
+console.log(guild.id)
+})
+```
+
+#### Event 11 [msgUpdate] 
+This event happens when the bot join servers!
+```js
+dis.on('guildJoin', async (oldMessage, newMessage) => {
+console.log(newMessage.id)
+})
+```
+
+#### Event 12 [msgDelete] 
+This event happens when the bot join servers!
+```js
+dis.on('msgDelete', async message => {
+console.log(newMessage.id)
+})
+```
