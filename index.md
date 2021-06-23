@@ -19,6 +19,8 @@ await dis.eventLoad() //Must be there to load events!
 client.login("token")
 ```
 
+# Events
+
 #### Event 1 [msgCreate] 
 Like you are creating message event using discord.js you can use discmds.js for creating this event!
 ```js
@@ -118,99 +120,101 @@ console.log(newMessage.id)
 ```
 
 #### Event 13 [guildMemberNicknameUpdate]
+This event happens when someones nickname updates
 ```js
 dis.on("guildMemberNicknameUpdate", (newMember, oldNick, newNick) => {
     console.log(oldNick, newNick)
 })
 ```
 
-#### Event 14 [guildMemberBoost]
-```js
-dis.on("guildMemberBoost", (newMember, oldPremiumSince, newPremiumSince) => {
-    console.log(oldPremiumSince, newPremiumSince)
-})
-```
-
-#### Event 15 [guildMemberUnboost]
-```js
-dis.on("guildMemberUnboost", (newMember, oldPremiumSince, newPremiumSince) => {
-    console.log(oldPremiumSince, newPremiumSince)
-})
-```
-
-#### Event 16 [userAvatarUpdate]
+#### Event 14 [userAvatarUpdate]
 ```js
 dis.on("userAvatarUpdate", (newUser, oldAvatar, newAvatar) => {})
 ```
 
-#### Event 17 [userUsernameUpdate]
+#### Event 15 [userUsernameUpdate]
 ```js
 dis.on("userUsernameUpdate", (newUser, oldUsername, newUsername) => {})
 ```
 
-#### Event 18 [userDiscriminatorUpdate]
+#### Event 16 [userDiscriminatorUpdate]
 ```js
 dis.on("userDiscriminatorUpdate", (newUser, oldDiscrim, newDiscim) => {})
 ```
 
-#### Event 19 [userFlagsUpdate]
+#### Event 17 [userFlagsUpdate]
 ```js
 dis.on("userFlagsUpdate", (newUser, oldFlags, newFlags) => {})
 ```
 
-#### Event 20 [rolePositionUpdate]
+#### Event 18 [rolePositionUpdate]
 ```js
 dis.on("rolePositionUpdate", (newRole, oldPosition, newPosition) => {})
 ```
 
-#### Event 21 [rolePermissionsUpdate]
+#### Event 19 [rolePermissionsUpdate]
 ```js
 dis.on("rolePermissionsUpdate", (newRole, oldPermission, newPermission) => {})
 ```
 
-#### Event 22 [guildRegionUpdate]
+#### Event 20 [guildRegionUpdate]
 ```js
 dis.on("guildRegionUpdate", (newGuild, oldRegion, newRegion) => {
     console.log(oldRegion, newRegion)
 })
 ```
 
-#### Event 23 [guildAfkChannelUpdate]
+#### Event 21 [guildAfkChannelUpdate]
 ```js
 dis.on("guildAfkChannelUpdate", (newGuild, oldAfkChannel, newAfkChannel) => {})
 ```
 
-#### Event 24 [guildVanityURLUpdate]
+#### Event 22 [guildVanityURLUpdate]
 ```js
 dis.on("guildVanityURLUpdate", (newGuild, oldVanity, newVanity) => {})
 ```
 
-#### Event 25 [guildAcronymUpdate]
+#### Event 23 [guildAcronymUpdate]
 ```js
 dis.on("guildAcronymUpdate", (newGuild, oldAcronym, newArconym) => {})
 ```
 
-#### Event 26 [guildOwnerUpdate]
+#### Event 24 [guildOwnerUpdate]
 ```js
 dis.on("guildOwnerUpdate", (newGuild, oldOwner, newOwner) => {})
 ```
 
-#### Event 27 [guildVanityURLUpdate]
+#### Event 25 [guildVanityURLUpdate]
 ```js
 dis.on("guildVanityURLUpdate", (newGuild, oldVanity, newVanity) => {})
 ```
 
-#### Event 28 [guildMaximumMembersUpdate]
+#### Event 26 [guildMaximumMembersUpdate]
 ```js
 dis.on("guildMaximumMembersUpdate", (newGuild, oldMaxMembers, newMaxMembers) => {})
 ```
 
-#### Event 29 [guildPartnerUpdate]
+#### Event 27 [guildPartnerUpdate]
 ```js
 dis.on("guildPartnerUpdate", (newGuild, oldPartner, newPartner) => {})
 ```
 
-#### Event 30 [guildVerifyUpdate]
+#### Event 28 [guildVerifyUpdate]
 ```js
 dis.on("guildVerifyUpdate", (newGuild, oldVerified, newVerified) => {})
 ```
+
+# Functions
+
+#### Function 1 [eventLoad] 
+For creating a message!
+```js
+dis.createMsg(channelid, messagetosend, filelink not important)
+```
+
+#### Function 2 [createMsg] 
+For creating a message!
+```js
+dis.createMsg(channelid, messagetosend, filelink not important)
+```
+
