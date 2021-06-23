@@ -204,6 +204,32 @@ dis.on("guildPartnerUpdate", (newGuild, oldPartner, newPartner) => {})
 dis.on("guildVerifyUpdate", (newGuild, oldVerified, newVerified) => {})
 ```
 
+#### Event 29 [roleCreate]
+```js
+dis.on("roleCreate", role => {
+console.log(role.id)
+})
+```
+
+#### Event 29 [roleDelete]
+```js
+dis.on("roleDelete", role => {
+console.log(role.id)
+})
+```
+
+#### Event 30 [channelUpdate]
+```js
+dis.on("channelUpdate", (oldChannel, newChannel) => {})
+```
+
+
+#### Event 28 [guildVerifyUpdate]
+```js
+dis.on("guildVerifyUpdate", (newGuild, oldVerified, newVerified) => {})
+```
+
+
 # Functions
 
 #### Function 1 [eventLoad] 
