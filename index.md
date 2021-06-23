@@ -2,6 +2,9 @@
 
 A simple package for making the use of discord.js easier than ever!
 
+## Join our discord Server!
+- https://discord.gg/jjNkZGyGbK
+
 ### What it has?
 - it has events like discord.js but it have some other events that discord.js don't have and it will make discord.js coding easier!
 
