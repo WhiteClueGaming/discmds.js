@@ -1,30 +1,45 @@
-## Welcome to GitHub Pages
+## Welcome to discmds.js
 
-You can use the [editor on GitHub](https://github.com/discmds/discmds/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+A simple package for making the use of discord.js easier than ever!
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### What it has?
+- it has events like discord.js but it have some other events that discord.js don't have and it will make discord.js coding easier!
 
-### Markdown
+### Example
+```js
+const discord = require("discord.js")
+const client = new discord.Clienr()
+const discmd = require("discmds.js")
+const dis = new discmd(client)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+client.on("ready", async () => {
+await dis.eventLoad() //Must be there to load events!
+})
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+client.login("token")
 ```
+
+#### Event 1 [msgCreate] 
+Like you are creating message event using discord.js you can use discmds.js for creating this event!
+```js
+dis.on('msgCreate', async message => {
+message.channel.send("hi") //discord.js sending
+dis.createMsg(message.channel.id, "hi") //discord.js + discmds.js
+//If you also want to send a attachment with message do dis.createMsg(channeid, content, filelink)
+})
+```
+
+#### Event 2 [userBan] 
+This event happens when someone in the server gets banned!
+```js
+dis.on('msgCreate', async message => {
+message.channel.send("hi") //discord.js sending
+dis.createMsg(message.channel.id, "hi") //discord.js + discmds.js
+//If you also want to send a attachment with message do dis.createMsg(channeid, content, filelink)
+})
+```
+
+
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
