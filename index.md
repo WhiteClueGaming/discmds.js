@@ -194,3 +194,23 @@ dis.on("guildAcronymUpdate", (newGuild, oldAcronym, newArconym) => {})
 ```js
 dis.on("guildOwnerUpdate", (newGuild, oldOwner, newOwner) => {})
 ```
+
+#### Event 27 [guildVanityURLUpdate]
+```js
+dis.on("guildVanityURLUpdate", (newGuild, oldVanity, newVanity) => {})
+```
+
+#### Event 28 [guildMaximumMembersUpdate]
+```js
+dis.on("guildMaximumMembersUpdate", (newGuild, oldMaxMembers, newMaxMembers) => {})
+```
+
+#### Event 29 [guildPartnerUpdate]
+```js
+dis.on("guildPartnerUpdate", (newGuild, oldPartner, newPartner) => {})
+```
+
+#### Event 30 [guildVerifyUpdate]
+```js
+dis.on("guildVerifyUpdate", (newGuild, oldVerified, newVerified) => {})
+```
