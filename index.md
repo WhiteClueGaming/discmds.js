@@ -247,3 +247,8 @@ For creating a message!
 dis.createMsg(channelid, messagetosend, filelink not important)
 ```
 
+#### Function 3 [guildBoost] 
+For sending a message when server gets a boost!
+```js
+dis.guildBoost(channelid)
+```
