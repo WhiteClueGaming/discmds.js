@@ -116,3 +116,81 @@ dis.on('msgDelete', async message => {
 console.log(newMessage.id)
 })
 ```
+
+#### Event 13 [guildMemberNicknameUpdate]
+```js
+dis.on("guildMemberNicknameUpdate", (newMember, oldNick, newNick) => {
+    console.log(oldNick, newNick)
+})
+```
+
+#### Event 14 [guildMemberBoost]
+```js
+dis.on("guildMemberBoost", (newMember, oldPremiumSince, newPremiumSince) => {
+    console.log(oldPremiumSince, newPremiumSince)
+})
+```
+
+#### Event 15 [guildMemberUnboost]
+```js
+dis.on("guildMemberUnboost", (newMember, oldPremiumSince, newPremiumSince) => {
+    console.log(oldPremiumSince, newPremiumSince)
+})
+```
+
+#### Event 16 [userAvatarUpdate]
+```js
+dis.on("userAvatarUpdate", (newUser, oldAvatar, newAvatar) => {})
+```
+
+#### Event 17 [userUsernameUpdate]
+```js
+dis.on("userUsernameUpdate", (newUser, oldUsername, newUsername) => {})
+```
+
+#### Event 18 [userDiscriminatorUpdate]
+```js
+dis.on("userDiscriminatorUpdate", (newUser, oldDiscrim, newDiscim) => {})
+```
+
+#### Event 19 [userFlagsUpdate]
+```js
+dis.on("userFlagsUpdate", (newUser, oldFlags, newFlags) => {})
+```
+
+#### Event 20 [rolePositionUpdate]
+```js
+dis.on("rolePositionUpdate", (newRole, oldPosition, newPosition) => {})
+```
+
+#### Event 21 [rolePermissionsUpdate]
+```js
+dis.on("rolePermissionsUpdate", (newRole, oldPermission, newPermission) => {})
+```
+
+#### Event 22 [guildRegionUpdate]
+```js
+dis.on("guildRegionUpdate", (newGuild, oldRegion, newRegion) => {
+    console.log(oldRegion, newRegion)
+})
+```
+
+#### Event 23 [guildAfkChannelUpdate]
+```js
+dis.on("guildAfkChannelUpdate", (newGuild, oldAfkChannel, newAfkChannel) => {})
+```
+
+#### Event 24 [guildVanityURLUpdate]
+```js
+dis.on("guildVanityURLUpdate", (newGuild, oldVanity, newVanity) => {})
+```
+
+#### Event 25 [guildAcronymUpdate]
+```js
+dis.on("guildAcronymUpdate", (newGuild, oldAcronym, newArconym) => {})
+```
+
+#### Event 26 [guildOwnerUpdate]
+```js
+dis.on("guildOwnerUpdate", (newGuild, oldOwner, newOwner) => {})
+```
