@@ -11,7 +11,7 @@ A simple package for making the use of discord.js easier than ever!
 ### Example
 ```js
 const discord = require("discord.js")
-const client = new discord.Clienr()
+const client = new discord.Client()
 const discmd = require("discmds.js")
 const dis = new discmd(client)
 
