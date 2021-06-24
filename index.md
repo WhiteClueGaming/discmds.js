@@ -37,7 +37,7 @@ dis.createMsg(message.channel.id, "hi") //discord.js + discmds.js
 #### Event 2 [userBan] 
 This event happens when someone in the server gets banned!
 ```js
-dis.on('msgCreate', async (guild,user) => {
+dis.on('userBan', async (guild,user) => {
 console.log(`${user.user.tag} got banned in ${guild.name}!`)
 })
 ```
@@ -109,7 +109,7 @@ console.log(guild.id)
 #### Event 11 [msgUpdate] 
 This event happens when the bot join servers!
 ```js
-dis.on('guildJoin', async (oldMessage, newMessage) => {
+dis.on('msgUpdate', async (oldMessage, newMessage) => {
 console.log(newMessage.id)
 })
 ```
@@ -226,13 +226,6 @@ console.log(role.id)
 dis.on("channelUpdate", (oldChannel, newChannel) => {})
 ```
 
-
-#### Event 28 [guildVerifyUpdate]
-```js
-dis.on("guildVerifyUpdate", (newGuild, oldVerified, newVerified) => {})
-```
-
-
 # Functions
 
 #### Function 1 [eventLoad] 
@@ -245,10 +238,4 @@ dis.createMsg(channelid, messagetosend, filelink not important)
 For creating a message!
 ```js
 dis.createMsg(channelid, messagetosend, filelink not important)
-```
-
-#### Function 3 [guildBoost] 
-For sending a message when server gets a boost!
-```js
-dis.guildBoost(channelid)
 ```
